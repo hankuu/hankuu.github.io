@@ -1,7 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   background-color: blue;
+  
+  /*fonts*/
+  font-family: sans-serif;
+  color: black;
+  
+  /*animation*/
+  animation: mycolors 25s;
+  animation-direction: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#space {
+  height:50px;
 }
 
 #content {
-  background-color: red;
+  background-color: rgba(255,255,255,1);
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  box-shadow: 10px 10px 5px #45b6fe, -10px -10px 5px #daf0ff;
+}
+
+h1 {
+  font-size: 52pt;
+  text-align: center;
+  color: #45b6fe;
+}
+
+p {
+  width: 75%;
+  margin: auto;
+  padding: 20px;
+}
+
+/*list of links*/
+ul {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  border: none;
+  width: 50%;
+  }
+  
+li {
+  border-bottom: 1px solid #fff;
+  margin: 0;
+  }
+
+li a {
+  display: block;
+  padding: 5px;
+  background-color: #45b6fe;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  }
+html>body li a {
+  width: auto;
+  }
+li a:hover {
+  background-color: #ffa500;
+  color: #fff;
+  }
+li a:visited {
+  background-color: #daf0ff;
+  color: #45b6fe;
+  }
+li a:visited:hover {
+  background-color: #ffa500;
+  color: #fff;
+  }
+
+/*Legend*/
+#legend {
+  width: 33%;
+  height: 50px;
+  margin: auto;
+  padding-top: 20px;
+}
+.info{
+  float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;
+}
+
+#seen {
+  background-color: #daf0ff;
+  color: #45b6fe;
+}
+
+#unseen {
+  background-color: #45b6fe;
+  color: #daf0ff;
+}
+
+/*Animations*/
+@keyframes mycolors {
+  0% {background-color: #daf0ff;}
+  50% {background-color: #45b6fe;}
+  100% {background-color: #daf0ff;}
 }
